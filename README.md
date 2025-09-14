@@ -3,19 +3,25 @@
 > Completely local RAG with chat UI
 
 <a href="https://www.mlexpert.io/bootcamp" target="_blank">
-  <img src="https://raw.githubusercontent.com/curiousily/ragbase/master/.github/ui.png">
+  <img src="https://raw.githubusercontent.com/mnuzzose/ragbase/master/.github/ui.png">
 </a>
 
 ## Demo
 
 Check out the [RagBase on Streamlit Cloud](https://ragbase.streamlit.app/). Runs with Groq API.
 
+## Prerequisites
+
+Pandoc needs to be installed for EPub parsing.
+
+
+
 ## Installation
 
 Clone the repo:
 
 ```sh
-git clone git@github.com:curiousily/ragbase.git
+git clone git@github.com:mnuzzose/ragbase.git
 cd ragbase
 ```
 
@@ -25,10 +31,10 @@ Install the dependencies (requires Poetry):
 poetry install
 ```
 
-Fetch your LLM (gemma2:9b by default):
+Fetch your LLM (deepseek-r1:7b by default):
 
 ```sh
-ollama pull gemma2:9b
+ollama pull deepseek-r1:7b
 ```
 
 Run the Ollama server

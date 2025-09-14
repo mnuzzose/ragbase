@@ -13,13 +13,13 @@ class Config:
         DOCUMENTS_COLLECTION = "documents"
 
     class Model:
-        EMBEDDINGS = "BAAI/bge-base-en-v1.5"
+        EMBEDDINGS = "BAAI/bge-small-en-v1.5"
         RERANKER = "ms-marco-MiniLM-L-12-v2"
-        LOCAL_LLM = "gemma2:9b"
+        LOCAL_LLM = "deepseek-r1:1.5b"
         REMOTE_LLM = "llama-3.1-70b-versatile"
-        TEMPERATURE = 0.0
-        MAX_TOKENS = 8000
-        USE_LOCAL = False
+        TEMPERATURE = 0.3
+        MAX_TOKENS = 4000
+        USE_LOCAL = True
 
     class Retriever:
         USE_RERANKER = True
